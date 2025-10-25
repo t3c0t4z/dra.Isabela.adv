@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#8B1538">
+    <title>Dra. Isabela Ventura da Costa - Advogada | Rio de Janeiro</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/logomarcat3c0t4zfavicom.png">
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Dra. Isabela V. Costa">
+    <!-- ========== DESKTOP/COMPUTER (Favicon Navegador) ========== -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/android/android-launchericon-48-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/android/android-launchericon-48-48.png">
+    <link rel="shortcut icon" href="/icons/android/android-launchericon-48-48.png">
+
+    <!-- ========== iOS (Apple Touch Icons) ========== -->
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/ios/152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/icons/ios/167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/ios/180.png">
+
+    <!-- ========== ANDROID (PWA Icons) ========== -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android/android-launchericon-192-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/android/android-launchericon-512-512.png">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Dra. Isabela Ventura da Costa - Advogada em Rio de Janeiro. Atendimento jurídico especializado com excelência e comprometimento.">
+    <meta name="keywords" content="advogada, Rio de Janeiro, Isabela Ventura Costa, advocacia, direito, consultoria jurídica">
+    
+    <!-- Google Fonts - Allura (Similar Brittanya) + Cormorant -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+    
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    
+        body {
+            font-family: 'Cormorant Garamond', 'Georgia', serif;
+            background: linear-gradient(135deg, #1a0510 0%, #8B1538 50%, #D4AF37 100%);
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+    
+        .card-container {
+            background: #ffffff;
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: none;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            -webkit-overflow-scrolling: touch;
+        }
+    
+        @media (min-width: 431px) {
+            body {
+                padding: 10px;
+            }
+    
+            .card-container {
+                max-width: 430px;
+                height: calc(100% - 20px);
+                border-radius: 20px;
+                box-shadow: 0 20px 60px rgba(139, 21, 56, 0.5);
+            }
+        }
+    
+        .header {
+            background: linear-gradient(135deg, #8B1538 0%, #6B0F2A 100%);
+            padding: max(env(safe-area-inset-top), 30px) 25px 25px 25px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 3px solid #D4AF37;
+        }
+    
+        .lang-switcher {
+            position: absolute;
+            top: max(env(safe-area-inset-top), 15px);
+            right: 20px;
+            background: rgba(212, 175, 55, 0.95);
+            border-radius: 20px;
+            padding: 6px 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 20;
+        }
+    
+        .lang-switcher:active {
+            transform: scale(0.95);
+        }
+    
+        .lang-option {
+            font-size: 12px;
+            font-weight: 600;
+            color: #4a2511;
+            transition: color 0.3s ease;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+    
+        .lang-option.active {
+            color: #1a0510;
+        }
+    
+        .lang-divider {
+            width: 1px;
+            height: 12px;
+            background: #8B1538;
+        }
+    
+        .header-content {
+            text-align: center;
+            color: #ffffff;
+        }
+    
+        .lawyer-badge {
+            display: inline-flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+    
+        .scale-icon {
+            width: 42px;
+            height: 42px;
+            fill: #D4AF37;
+            filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.4));
+            animation: scaleFloat 4s ease-in-out infinite;
+        }
+    
+        @keyframes scaleFloat {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-8px) rotate(-3deg);
+            }
+        }
+    
+        .header-title {
+            font-family: 'Allura', cursive;
+            font-size: 42px;
+            font-weight: 400;
+            color: #D4AF37;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+            line-height: 1.3;
+        }
+    
+        .header-subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 18px;
+            color: #f0e6d2;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    
+        .header-location {
+            font-size: 14px;
+            color: #D4AF37;
+            margin-top: 10px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            letter-spacing: 1px;
+        }
+    
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+        }
+    
+        .profile-section {
+            width: 100%;
+            height: 42vh;
+            max-height: 420px;
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+    
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(1.05) contrast(1.08);
+            animation: photoGlow 5s ease-in-out infinite alternate;
+        }
+    
+        @keyframes photoGlow {
+            0% {
+                filter: brightness(1.05) contrast(1.08) saturate(1);
+            }
+            100% {
+                filter: brightness(1.1) contrast(1.1) saturate(1.05);
+            }
+        }
+    
+        .photo-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, transparent 40%, rgba(139, 21, 56, 0.3) 100%);
+            pointer-events: none;
+        }
+    
+        .qr-section {
+            background: linear-gradient(135deg, #f5f0e8 0%, #faf8f3 50%, #f5f0e8 100%);
+            padding: 30px 25px max(env(safe-area-inset-bottom, 30px), 30px) 25px;
+            border-radius: 30px 30px 0 0;
+            margin-top: -25px;
+            position: relative;
+            z-index: 2;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 -15px 40px rgba(139, 21, 56, 0.15);
+            border-top: 3px solid #D4AF37;
+            min-height: 450px;
+        }
+    
+        .qr-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    
+        .qr-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .qr-title {
+            font-family: 'Allura', cursive;
+            font-size: 32px;
+            color: #8B1538;
+            font-weight: 400;
+            margin-bottom: 8px;
+            letter-spacing: 0px;
+        }
+    
+        .qr-subtitle {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 14px;
+            color: #6B0F2A;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+    
+        .qr-container {
+            background: #ffffff;
+            border-radius: 25px;
+            padding: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 12px 40px rgba(139, 21, 56, 0.25);
+            position: relative;
+            margin: 0 auto 25px;
+            width: 100%;
+            max-width: 280px;
+            border: 3px solid #D4AF37;
+        }
+    
+        .qr-code-img {
+            width: 100%;
+            max-width: 220px;
+            height: auto;
+            aspect-ratio: 1;
+            display: block;
+        }
+    
+        .info-section {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+    
+        .service-badge {
+            background: linear-gradient(135deg, #8B1538 0%, #6B0F2A 100%);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 28px;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 600;
+            box-shadow: 0 6px 18px rgba(139, 21, 56, 0.35);
+            border: 2px solid #D4AF37;
+            letter-spacing: 0.5px;
+        }
+    
+        .service-icon {
+            font-size: 18px;
+            color: #D4AF37;
+        }
+    
+        .experience {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 14px;
+            color: #6B0F2A;
+            font-weight: 500;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+    
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: auto;
+            padding-top: 20px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+    
+        .contact-btn {
+            background: #ffffff;
+            color: #8B1538;
+            border: 2px solid #D4AF37;
+            padding: 14px 26px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(139, 21, 56, 0.2);
+            position: relative;
+            overflow: hidden;
+            touch-action: manipulation;
+            letter-spacing: 0.5px;
+        }
+    
+        .contact-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.25);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+    
+        .contact-btn:hover::before {
+            width: 350px;
+            height: 350px;
+        }
+    
+        .contact-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(139, 21, 56, 0.3);
+            border-color: #8B1538;
+            border-width: 3px;
+        }
+    
+        .contact-btn:active {
+            transform: translateY(-1px) scale(0.98);
+            box-shadow: 0 4px 12px rgba(139, 21, 56, 0.25);
+        }
+    
+        .contact-btn i {
+            font-size: 19px;
+            position: relative;
+            z-index: 1;
+            transition: transform 0.4s ease;
+        }
+    
+        .contact-btn:hover i {
+            transform: scale(1.2) rotate(5deg);
+        }
+    
+        .contact-btn span {
+            position: relative;
+            z-index: 1;
+            font-size: 13px;
+        }
+    
+        .whatsapp {
+            border-color: #25D366;
+        }
+    
+        .whatsapp i {
+            color: #25D366;
+        }
+    
+        .whatsapp:hover {
+            border-color: #25D366;
+        }
+    
+        .instagram {
+            border-color: #E4405F;
+        }
+    
+        .instagram i {
+            color: #E4405F;
+        }
+    
+        .instagram:hover {
+            border-color: #E4405F;
+        }
+    
+        .email {
+            border-color: #D4AF37;
+        }
+    
+        .email i {
+            color: #8B1538;
+        }
+    
+        .email:hover {
+            border-color: #D4AF37;
+        }
+    
+        .lang-content {
+            display: none;
+        }
+    
+        .lang-content.active {
+            display: block;
+        }
+    
+        @media (max-width: 380px) {
+            .contact-buttons {
+                flex-direction: column;
+            }
+    
+            .contact-btn {
+                width: 100%;
+                justify-content: center;
+            }
+    
+            .header-title {
+                font-size: 36px;
+            }
+    
+            .qr-title {
+                font-size: 28px;
+            }
+        }
+    
+        @media (max-height: 700px) {
+            .profile-section {
+                height: 36vh;
+            }
+    
+            .qr-section {
+                padding: 25px 25px max(env(safe-area-inset-bottom, 25px), 25px) 25px;
+                min-height: 400px;
+            }
+    
+            .qr-code-img {
+                max-width: 190px;
+            }
+    
+            .qr-container {
+                max-width: 250px;
+            }
+        }
+    
+        @media (max-height: 640px) {
+            .profile-section {
+                height: 32vh;
+            }
+    
+            .qr-section {
+                padding: 20px 20px max(env(safe-area-inset-bottom, 20px), 20px) 20px;
+                min-height: 380px;
+            }
+    
+            .qr-header {
+                margin-bottom: 15px;
+            }
+    
+            .qr-title {
+                font-size: 28px;
+            }
+    
+            .qr-code-img {
+                max-width: 170px;
+            }
+    
+            .qr-container {
+                max-width: 230px;
+                margin-bottom: 20px;
+            }
+    
+            .contact-btn {
+                padding: 12px 24px;
+            }
+    
+            .header-title {
+                font-size: 36px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="card-container">
+        <div class="header">
+            <div class="lang-switcher" onclick="toggleLanguage()">
+                <span class="lang-option active" id="lang-pt">PT</span>
+                <span class="lang-divider"></span>
+                <span class="lang-option" id="lang-en">EN</span>
+            </div>
+
+            <div class="header-content">
+                <div class="lawyer-badge">
+                    <svg class="scale-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M256 0c17.7 0 32 14.3 32 32V64h32c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9L288 173.3V224H448c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9L378.7 371.7c-12.5 12.5-32.8 12.5-45.3 0L256 294.4 178.7 371.7c-12.5 12.5-32.8 12.5-45.3 0L41.4 278.6c-9.1-9.1-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H224V173.3L169.4 118.6c-9.1-9.1-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8h32V32c0-17.7 14.3-32 32-32zM192 448H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/>
+                    </svg>
+                </div>
+                <h1 class="header-title">Isabela Ventura da Costa</h1>
+                <p class="header-subtitle">
+                    <span class="lang-content active" data-lang="pt">Advogada</span>
+                    <span class="lang-content" data-lang="en">Attorney at Law</span>
+                </p>
+                <p class="header-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="lang-content active" data-lang="pt">Rio de Janeiro, Brasil</span>
+                    <span class="lang-content" data-lang="en">Rio de Janeiro, Brazil</span>
+                </p>
+            </div>
+        </div>
+    
+        <div class="main-content">
+            <div class="profile-section">
+                <img src="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelafoto3.jpeg" alt="Dra. Isabela Ventura da Costa - Advogada" class="profile-image">
+                <div class="photo-overlay"></div>
+            </div>
+    
+            <div class="qr-section">
+                <div class="qr-content">
+                    <div class="qr-header">
+                        <div class="qr-title">
+                            <span class="lang-content active" data-lang="pt">Salve Meu Contato</span>
+                            <span class="lang-content" data-lang="en">Save My Contact</span>
+                        </div>
+                        <div class="qr-subtitle">
+                            <span class="lang-content active" data-lang="pt">Escaneie o QR Code abaixo</span>
+                            <span class="lang-content" data-lang="en">Scan the QR Code below</span>
+                        </div>
+                    </div>
+    
+                    <div class="qr-container">
+                        <img src="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/qrcodeisabelapr.png" alt="QR Code Dra. Isabela Ventura da Costa" class="qr-code-img">
+                    </div>
+    
+                    <div class="info-section">
+                        <div class="service-badge">
+                            <i class="fas fa-gavel service-icon"></i>
+                            <span class="lang-content active" data-lang="pt">Atendimento Jurídico Especializado</span>
+                            <span class="lang-content" data-lang="en">Specialized Legal Services</span>
+                        </div>
+                        <div class="experience">
+                            <span class="lang-content active" data-lang="pt">Excelência e comprometimento com seus direitos</span>
+                            <span class="lang-content" data-lang="en">Excellence and commitment to your rights</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="contact-buttons">
+                    <a href="https://wa.me/5521982862471" class="contact-btn whatsapp" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://instagram.com/dra.isabelavcosta" class="contact-btn instagram" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="mailto:isabelavcosta.adv@gmail.com" class="contact-btn email">
+                        <i class="fas fa-envelope"></i>
+                        <span>E-mail</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let currentLang = 'pt';
+    
+        function toggleLanguage() {
+            currentLang = currentLang === 'pt' ? 'en' : 'pt';
+    
+            document.getElementById('lang-pt').classList.toggle('active');
+            document.getElementById('lang-en').classList.toggle('active');
+    
+            document.querySelectorAll('.lang-content').forEach(element => {
+                if (element.getAttribute('data-lang') === currentLang) {
+                    element.classList.add('active');
+                } else {
+                    element.classList.remove('active');
+                }
+            });
+        }
+    
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(registration => {
+                        console.log('Service Worker registrado:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('Erro ao registrar Service Worker:', error);
+                    });
+            });
+        }
+    </script>
+
+</body>
+</html>
