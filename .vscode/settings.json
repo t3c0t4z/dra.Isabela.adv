@@ -1,0 +1,15 @@
+{
+  // Desativa validação HTML integrada (pode esconder avisos de compatibilidade)
+  "html.validate": false,
+
+  // Desativa webhint (se a extensão estiver instalada)
+  "webhint.enable": false,
+  "webhint.showReports": false,
+
+  // Desativa HTMLHint integrado (se a extensão estiver instalada)
+  "htmlhint.enable": false,
+
+  // Opcional: desativa validação de CSS/JS embutida (se preferir manter, remova)
+  "css.validate": true,
+  "javascript.validate.enable": true
+}

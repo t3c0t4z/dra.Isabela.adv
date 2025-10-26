@@ -1,39 +1,50 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#8B1538">
+    <style>
+        body { background-color: #8B1538; }
+    </style>
     <title>Dra. Isabela Ventura da Costa - Advogada | Rio de Janeiro</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/logomarcat3c0t4zfavicom.png">
-    
-    <!-- PWA Meta Tags -->
-    <link rel="manifest" href="/manifest.json">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Dra. Isabela V. Costa">
-    <!-- ========== DESKTOP/COMPUTER (Favicon Navegador) ========== -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/icons/android/android-launchericon-48-48.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/android/android-launchericon-48-48.png">
-    <link rel="shortcut icon" href="/icons/android/android-launchericon-48-48.png">
-
-    <!-- ========== iOS (Apple Touch Icons) ========== -->
-    <link rel="apple-touch-icon" sizes="152x152" href="/icons/ios/152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="/icons/ios/167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/ios/180.png">
-
-    <!-- ========== ANDROID (PWA Icons) ========== -->
-    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android/android-launchericon-192-192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/icons/android/android-launchericon-512-512.png">
+    <!-- Favicon CORRIGIDO -->
+    <link rel="icon" type="image/png" href="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelalogofav.png">
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Dra. Isabela Ventura da Costa - Advogada em Rio de Janeiro. Atendimento jurídico especializado com excelência e comprometimento.">
     <meta name="keywords" content="advogada, Rio de Janeiro, Isabela Ventura Costa, advocacia, direito, consultoria jurídica">
     
-    <!-- Google Fonts - Allura (Similar Brittanya) + Cormorant -->
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dra. Isabela Ventura da Costa - Advogada">
+    <meta property="og:description" content="Advogada em Rio de Janeiro. Atendimento jurídico especializado com excelência.">
+    <meta property="og:image" content="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelafoto3.jpeg">
+    <meta property="og:type" content="profile">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelalogofav.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelalogofav.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelalogofav.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelalogofav.png">
+
+    <!-- Apple Status Bar Style -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Isabela Ventura">
+
+    <!-- Windows Tiles -->
+    <meta name="msapplication-TileColor" content="#8B1538">
+    <meta name="msapplication-TileImage" content="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelalogofav.png">
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" as="image" href="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelafoto3.jpeg">
+    <link rel="preload" as="image" href="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/Copilotqrcodetransp.png">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -79,7 +90,6 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            -webkit-overflow-scrolling: touch;
         }
     
         @media (min-width: 431px) {
@@ -97,7 +107,7 @@
     
         .header {
             background: linear-gradient(135deg, #8B1538 0%, #6B0F2A 100%);
-            padding: max(env(safe-area-inset-top), 30px) 25px 25px 25px;
+            padding: max(env(safe-area-inset-top), 20px) 20px 20px 20px;
             flex-shrink: 0;
             position: sticky;
             top: 0;
@@ -151,7 +161,7 @@
         .lawyer-badge {
             display: inline-flex;
             justify-content: center;
-            margin-bottom: 15px;
+            margin-bottom: 8px;
         }
     
         .scale-icon {
@@ -173,18 +183,18 @@
     
         .header-title {
             font-family: 'Allura', cursive;
-            font-size: 42px;
+            font-size: 38px;
             font-weight: 400;
             color: #D4AF37;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             letter-spacing: 1px;
             text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-            line-height: 1.3;
+            line-height: 1.2;
         }
     
         .header-subtitle {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 18px;
+            font-size: 17px;
             color: #f0e6d2;
             font-weight: 500;
             letter-spacing: 2px;
@@ -192,9 +202,9 @@
         }
     
         .header-location {
-            font-size: 14px;
+            font-size: 13px;
             color: #D4AF37;
-            margin-top: 10px;
+            margin-top: 5px;
             font-weight: 500;
             display: flex;
             align-items: center;
@@ -305,6 +315,8 @@
             width: 100%;
             max-width: 280px;
             border: 3px solid #D4AF37;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            opacity: 1;
         }
     
         .qr-code-img {
@@ -351,26 +363,26 @@
         }
     
         .contact-buttons {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 12px;
             margin-top: auto;
             padding-top: 20px;
             width: 100%;
-            flex-wrap: wrap;
         }
     
         .contact-btn {
             background: #ffffff;
             color: #8B1538;
             border: 2px solid #D4AF37;
-            padding: 14px 26px;
+            padding: 14px 20px;
             border-radius: 30px;
             font-size: 13px;
             font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 10px;
+            justify-content: center;
+            gap: 8px;
             cursor: pointer;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             text-decoration: none;
@@ -379,6 +391,7 @@
             overflow: hidden;
             touch-action: manipulation;
             letter-spacing: 0.5px;
+            font-family: 'Cormorant Garamond', serif;
         }
     
         .contact-btn::before {
@@ -409,6 +422,11 @@
         .contact-btn:active {
             transform: translateY(-1px) scale(0.98);
             box-shadow: 0 4px 12px rgba(139, 21, 56, 0.25);
+        }
+    
+        .contact-btn:focus-visible {
+            outline: 3px solid #D4AF37;
+            outline-offset: 2px;
         }
     
         .contact-btn i {
@@ -463,6 +481,18 @@
         .email:hover {
             border-color: #D4AF37;
         }
+
+        .website {
+            border-color: #8B1538;
+        }
+    
+        .website i {
+            color: #8B1538;
+        }
+    
+        .website:hover {
+            border-color: #8B1538;
+        }
     
         .lang-content {
             display: none;
@@ -474,12 +504,7 @@
     
         @media (max-width: 380px) {
             .contact-buttons {
-                flex-direction: column;
-            }
-    
-            .contact-btn {
-                width: 100%;
-                justify-content: center;
+                grid-template-columns: 1fr;
             }
     
             .header-title {
@@ -538,7 +563,7 @@
             }
     
             .contact-btn {
-                padding: 12px 24px;
+                padding: 12px 18px;
             }
     
             .header-title {
@@ -551,7 +576,7 @@
 <body>
     <div class="card-container">
         <div class="header">
-            <div class="lang-switcher" onclick="toggleLanguage()">
+            <div class="lang-switcher" role="button" aria-label="Alternar idioma" tabindex="0">
                 <span class="lang-option active" id="lang-pt">PT</span>
                 <span class="lang-divider"></span>
                 <span class="lang-option" id="lang-en">EN</span>
@@ -563,7 +588,7 @@
                         <path d="M256 0c17.7 0 32 14.3 32 32V64h32c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9L288 173.3V224H448c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9L378.7 371.7c-12.5 12.5-32.8 12.5-45.3 0L256 294.4 178.7 371.7c-12.5 12.5-32.8 12.5-45.3 0L41.4 278.6c-9.1-9.1-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H224V173.3L169.4 118.6c-9.1-9.1-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8h32V32c0-17.7 14.3-32 32-32zM192 448H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/>
                     </svg>
                 </div>
-                <h1 class="header-title">Isabela Ventura da Costa</h1>
+                <h1 class="header-title">Isabela Ventura</h1>
                 <p class="header-subtitle">
                     <span class="lang-content active" data-lang="pt">Advogada</span>
                     <span class="lang-content" data-lang="en">Attorney at Law</span>
@@ -596,7 +621,7 @@
                     </div>
     
                     <div class="qr-container">
-                        <img src="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/qrcodeisabelapr.png" alt="QR Code Dra. Isabela Ventura da Costa" class="qr-code-img">
+                        <img id="qrCodeImage" src="https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/Copilotqrcodetransp.png" alt="QR Code Dra. Isabela Ventura da Costa" class="qr-code-img">
                     </div>
     
                     <div class="info-section">
@@ -613,18 +638,23 @@
                 </div>
     
                 <div class="contact-buttons">
-                    <a href="https://wa.me/5521982862471" class="contact-btn whatsapp" target="_blank" rel="noopener">
+                    <button data-qr="whatsapp" class="contact-btn whatsapp" aria-label="Ver QR Code do WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                         <span>WhatsApp</span>
-                    </a>
-                    <a href="https://instagram.com/dra.isabelavcosta" class="contact-btn instagram" target="_blank" rel="noopener">
+                    </button>
+                    <button data-qr="instagram" class="contact-btn instagram" aria-label="Ver QR Code do Instagram">
                         <i class="fab fa-instagram"></i>
                         <span>Instagram</span>
-                    </a>
-                    <a href="mailto:isabelavcosta.adv@gmail.com" class="contact-btn email">
+                    </button>
+                    <button data-qr="website" class="contact-btn website" aria-label="Ver QR Code da Landing Page">
+                        <i class="fas fa-globe"></i>
+                        <span class="lang-content active" data-lang="pt">Landing Page</span>
+                        <span class="lang-content" data-lang="en">Landing Page</span>
+                    </button>
+                    <button data-qr="email" class="contact-btn email" aria-label="Ver QR Code do E-mail">
                         <i class="fas fa-envelope"></i>
                         <span>E-mail</span>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -632,13 +662,24 @@
     
     <script>
         let currentLang = 'pt';
-    
+        let qrImageCache, qrContainerCache;
+
+        // QR Code URLs - CORRIGIDO
+        const qrCodes = {
+            default: 'https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/Copilotqrcodetransp.png',
+            whatsapp: 'https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelaqrcodewpp.png',
+            instagram: 'https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelaqrcodeinstagram.png',
+            email: 'https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelaqrcodegmail.png',
+            website: 'https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelaqrcodelandingpage.png'
+        };
+
+        // Toggle Language
         function toggleLanguage() {
             currentLang = currentLang === 'pt' ? 'en' : 'pt';
-    
+
             document.getElementById('lang-pt').classList.toggle('active');
             document.getElementById('lang-en').classList.toggle('active');
-    
+
             document.querySelectorAll('.lang-content').forEach(element => {
                 if (element.getAttribute('data-lang') === currentLang) {
                     element.classList.add('active');
@@ -647,18 +688,65 @@
                 }
             });
         }
-    
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js')
-                    .then(registration => {
-                        console.log('Service Worker registrado:', registration.scope);
-                    })
-                    .catch(error => {
-                        console.log('Erro ao registrar Service Worker:', error);
-                    });
+
+        // Change QR Code with Animation
+        function changeQRCode(type) {
+            // Cache DOM elements
+            if (!qrImageCache) {
+                qrImageCache = document.getElementById('qrCodeImage');
+                qrContainerCache = document.querySelector('.qr-container');
+            }
+            
+            // Haptic feedback (mobile)
+            if (navigator.vibrate) {
+                navigator.vibrate(10);
+            }
+            
+            // Fade out animation
+            qrContainerCache.style.opacity = '0';
+            qrContainerCache.style.transform = 'scale(0.95)';
+            
+            setTimeout(() => {
+                // Change QR Code image
+                qrImageCache.src = qrCodes[type];
+                qrImageCache.alt = `QR Code ${type.charAt(0).toUpperCase() + type.slice(1)} - Dra. Isabela Ventura da Costa`;
+                
+                // Fade in animation
+                qrContainerCache.style.opacity = '1';
+                qrContainerCache.style.transform = 'scale(1)';
+            }, 200);
+        }
+
+        // Preload QR Code images for instant switching
+        function preloadQRCodes() {
+            Object.values(qrCodes).forEach(url => {
+                const img = new Image();
+                img.src = url;
             });
         }
+
+        // Keyboard accessibility for language switcher
+        document.querySelector('.lang-switcher')?.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleLanguage();
+            }
+        });
+
+        // Initialize on page load
+        window.addEventListener('load', () => {
+            preloadQRCodes();
+
+            // Attach event listeners instead of using inline onclick attributes
+            document.querySelector('.lang-switcher')?.addEventListener('click', toggleLanguage);
+
+            document.querySelectorAll('.contact-btn[data-qr]').forEach(btn => {
+                const qrType = btn.getAttribute('data-qr');
+                if (qrType) {
+                    btn.addEventListener('click', () => changeQRCode(qrType));
+                }
+            });
+        });
     </script>
 
 </body>
