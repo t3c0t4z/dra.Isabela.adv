@@ -2,14 +2,14 @@
 // Versão: 1.0
 // Data: 2025-10-26
 
-const CACHE_NAME = 'isabela-ventura-v1.0';
-const OFFLINE_URL = './offline.html';
+const CACHE_NAME = 'isabela-ventura-v1.1';
+const OFFLINE_URL = '/offline.html';
 
 // Recursos para cache inicial (install)
 const PRECACHE_URLS = [
-  './',
-  './index.html',
-  './manifest.json',
+  '/',
+  '/index.html',
+  '/manifest.json',
   'https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
 ];
