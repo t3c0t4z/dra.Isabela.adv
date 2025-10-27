@@ -20,7 +20,7 @@ const QR_IMAGES = [
   'https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelaqrcodewpp.png',
   'https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelaqrcodeinstagram.png',
   'https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelaqrcodegmail.png',
-  'https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelaqrcodelandingpage.png',
+  'https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelaqrcodelandingpageoficial.png',
   'https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelafoto3.jpeg',
   'https://lhujzzoqebgjbsnezmrt.supabase.co/storage/v1/object/public/Photos/isabelalogofav.png'
 ];
